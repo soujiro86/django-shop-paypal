@@ -12,7 +12,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.translation import ugettext_lazy as _
 
 from paypal.standard.forms import PayPalPaymentsForm
-from paypal.standard.ipn.signals import payment_was_successful as success_signal
+from paypal.standard.ipn.signals import valid_ipn_received as success_signal
 
 
 class OffsitePaypalBackend(object):
